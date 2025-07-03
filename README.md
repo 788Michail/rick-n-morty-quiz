@@ -11,7 +11,7 @@ This project was developed as part of a Frontend Assessment to demonstrate front
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/rick-n-morty-quiz.git
+git clone https://github.com/788michail/rick-n-morty-quiz.git
 cd rick-n-morty-quiz
 
 npm install
