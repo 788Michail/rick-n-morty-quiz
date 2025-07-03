@@ -24,7 +24,7 @@ yarn dev
 
 ```
 
-## ✅ Functional Features
+### ✅ Functional Features
 
     5 random quiz questions per session, generated dynamically
 
@@ -36,7 +36,7 @@ yarn dev
 
     Dark/Light Mode toggle with localStorage persistence using shadcn/ui Switch
 
-## 🧠 Implementation Notes
+### 🧠 Implementation Notes
 
     Character data is fetched from the Rick and Morty API on quiz start
 
@@ -50,7 +50,7 @@ yarn dev
 
     The project follows a modular architecture for reusability and readability
 
-## 🔧 Tech Stack
+### 🔧 Tech Stack
 
     React
 
@@ -62,7 +62,7 @@ yarn dev
 
     Rick and Morty API
 
-## 🙋‍♂️ Author
+### 🙋‍♂️ Author
 
 **Made with 💙 by @michail788**
 
