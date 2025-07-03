@@ -1,69 +1,89 @@
-# React + TypeScript + Vite
+# 🧪 Rick and Morty Character Quiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A quiz app built with **React + TypeScript + TailwindCSS**, using the [Rick and Morty API](https://rickandmortyapi.com/) as the data source.
 
-Currently, two official plugins are available:
+This project was developed as part of a Frontend Assessment to demonstrate frontend architecture, data handling, and clean UI design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Setup Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Clone the repository
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+git clone https://github.com/yourusername/rick-n-morty-quiz.git
+cd rick-n-morty-quiz
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+npm install
+# or
+yarn install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+npm run dev
+# or
+yarn dev
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```
+## ✅ Functional Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+    5 random quiz questions per session, generated dynamically
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+    Each question shows a character image with 5 name options (1 correct, 4 wrong)
+
+    Score tracking and final result display
+
+    "Play Again" button resets the quiz
+
+    Dark/Light Mode toggle with localStorage persistence using shadcn/ui Switch
+```
+
+```
+## 🧠 Implementation Notes
+
+    Character data is fetched from the Rick and Morty API on quiz start
+
+    Questions are generated using a utility function: generateQuestions.ts
+
+    App state is managed in the top-level App.tsx, and question flow is encapsulated in the Quiz component
+
+    Dark mode is handled with Tailwind's dark variant and theme state is saved to localStorage
+
+    Fully written in TypeScript, including typed API responses (Character, Question)
+
+    The project follows a modular architecture for reusability and readability
+```
+
+```
+## 🔧 Tech Stack
+
+    React
+
+    TypeScript
+
+    Tailwind CSS
+
+    shadcn/ui (based on Radix UI)
+
+    Rick and Morty API
+```
+
+```
+##🙋‍♂️ Author
+
+**Made with 💙 by @michail788**
+```
+
+```
+src/
+├── api/
+│   └── getCharacters.ts
+├── components/
+│   ├── Quiz.tsx
+│   └── ui/
+│       └── switch.tsx
+├── utils/
+│   └── generateQuestions.ts
+├── App.tsx
+├── main.tsx
 ```
