@@ -62,10 +62,11 @@ yarn dev
 
     Rick and Morty API
 
-##🙋‍♂️ Author
+## 🙋‍♂️ Author
 
 **Made with 💙 by @michail788**
 
+```
 src/
 ├── api/
 │ └── getCharacters.ts
@@ -77,3 +78,4 @@ src/
 │ └── generateQuestions.ts
 ├── App.tsx
 ├── main.tsx
+```
