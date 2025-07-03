@@ -24,7 +24,6 @@ yarn dev
 
 ```
 
-```
 ## ✅ Functional Features
 
     5 random quiz questions per session, generated dynamically
@@ -36,9 +35,7 @@ yarn dev
     "Play Again" button resets the quiz
 
     Dark/Light Mode toggle with localStorage persistence using shadcn/ui Switch
-```
 
-```
 ## 🧠 Implementation Notes
 
     Character data is fetched from the Rick and Morty API on quiz start
@@ -52,9 +49,7 @@ yarn dev
     Fully written in TypeScript, including typed API responses (Character, Question)
 
     The project follows a modular architecture for reusability and readability
-```
 
-```
 ## 🔧 Tech Stack
 
     React
@@ -66,24 +61,19 @@ yarn dev
     shadcn/ui (based on Radix UI)
 
     Rick and Morty API
-```
 
-```
 ##🙋‍♂️ Author
 
 **Made with 💙 by @michail788**
-```
 
-```
 src/
 ├── api/
-│   └── getCharacters.ts
+│ └── getCharacters.ts
 ├── components/
-│   ├── Quiz.tsx
-│   └── ui/
-│       └── switch.tsx
+│ ├── Quiz.tsx
+│ └── ui/
+│ └── switch.tsx
 ├── utils/
-│   └── generateQuestions.ts
+│ └── generateQuestions.ts
 ├── App.tsx
 ├── main.tsx
-```
